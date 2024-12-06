@@ -84,6 +84,7 @@ const selectPokemon = async(pokemon)=>{
 
 <style scoped>
 .card-List{
+  padding: 10px 30px;
   max-height: 750px;
   overflow-y: scroll;
   overflow-x: hidden;
