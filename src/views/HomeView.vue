@@ -13,14 +13,14 @@ let loading = ref(false)
 onMounted(()=>{
   
   /* requisiao API com fetch */
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=1400&offset=0")
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=600&offset=0")
   .then(res =>res.json()) /* após pegar a requisição transforma em json */
   .then(res => pokemons.value = res.results) /* após transformar em json, armazena na variavel pokemons os resultados */
 
 })
 
 const pokemonsFiltered = computed(()=>{
- 
+  
   if(pokemons.value && searchPokemonField.value){
     return pokemons.value.filter(pokemon=>
       pokemon.name.toLowerCase().includes(searchPokemonField.value.toLowerCase())
@@ -31,7 +31,7 @@ const pokemonsFiltered = computed(()=>{
 
 
 const selectPokemon = async(pokemon)=>{
-  
+  console.log(pokemon)
   loading.value = true
   await fetch(pokemon.url)
   .then(res=> res.json())
@@ -52,8 +52,10 @@ const selectPokemon = async(pokemon)=>{
           :name="pokemonSelected?.name"
           :xp="pokemonSelected?.base_experience"
           :height="pokemonSelected?.height"
-          :image = "pokemonSelected?.sprites.other.dream_world.front_default"
-          
+          :image = "pokemonSelected?.sprites.other.showdown.front_default"
+          :abilities ="pokemonSelected?.abilities"
+          :weight="pokemonSelected?.weight"
+          :stats ="pokemonSelected?.stats"
           :loading ="loading"
           
           ></CardPokemonSelected>
