@@ -53,7 +53,7 @@ const selectPokemon = async(pokemon)=>{
           :xp="pokemonSelected?.base_experience"
           :height="pokemonSelected?.height"
           :image = "pokemonSelected?.sprites.other.dream_world.front_default"
-          :skill= "pokemonSelected?.moves.move['razor-wind']"
+          
           :loading ="loading"
           
           ></CardPokemonSelected>
