@@ -13,7 +13,7 @@ let loading = ref(false)
 onMounted(()=>{
   
   /* requisiao API com fetch */
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=600&offset=0")
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0")
   .then(res =>res.json()) /* após pegar a requisição transforma em json */
   .then(res => pokemons.value = res.results) /* após transformar em json, armazena na variavel pokemons os resultados */
 
