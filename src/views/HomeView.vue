@@ -13,7 +13,7 @@ let loading = ref(false)
 onMounted(()=>{
   
   /* requisiao API com fetch */
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0")
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=1400&offset=0")
   .then(res =>res.json()) /* após pegar a requisição transforma em json */
   .then(res => pokemons.value = res.results) /* após transformar em json, armazena na variavel pokemons os resultados */
 
@@ -84,7 +84,7 @@ const selectPokemon = async(pokemon)=>{
 
 <style scoped>
 .card-List{
-  max-height: 450px;
+  max-height: 750px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
