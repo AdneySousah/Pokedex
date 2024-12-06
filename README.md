@@ -11,3 +11,15 @@ Acesse o projeto ao vivo: [link para o projeto hospedado no Vercel]
 - [Vite](https://vitejs.dev/)  
 - [PokéAPI](https://pokeapi.co/)  
 - [Vercel](https://vercel.com/)
+
+🌟 Funcionalidades
+Busca de Pokémon por nome ou ID.
+Exibição de detalhes como tipos, habilidades e stats.
+Interface responsiva e intuitiva.
+🤝 Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+Feito com ❤️ por Adney Sousa Santos
