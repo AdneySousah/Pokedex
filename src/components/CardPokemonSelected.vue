@@ -1,5 +1,5 @@
 <script setup>
-const pokemon = defineProps(["name","xp","height","image","loading","skill"])
+const pokemon = defineProps(["name","xp","height","image","loading"])
 
 </script>
 <template>
@@ -23,10 +23,7 @@ const pokemon = defineProps(["name","xp","height","image","loading","skill"])
                 <strong>Altura:</strong>
                 <span>{{pokemon.height}}</span>
             </section>
-            <section class="col">
-                <strong>Skill:</strong>
-                <span>{{pokemon.skill}}</span>
-            </section>
+           
         </div>
     </div>
     </div>
