@@ -1,29 +1,13 @@
-# pokevite
+# PokeVite
 
-This template should help get you started developing with Vue 3 in Vite.
+🎮 Explore informações sobre seus Pokémon favoritos com o **PokeVite**!  
+Este é um projeto desenvolvido com **Vue.js** e **Vite**, consumindo a API gratuita [PokéAPI](https://pokeapi.co), e hospedado no **Vercel**.  
 
-## Recommended IDE Setup
+## 🚀 Demonstração
+Acesse o projeto ao vivo: [link para o projeto hospedado no Vercel]
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## 🛠️ Tecnologias utilizadas
+- [Vue.js](https://vuejs.org/)  
+- [Vite](https://vitejs.dev/)  
+- [PokéAPI](https://pokeapi.co/)  
+- [Vercel](https://vercel.com/)
